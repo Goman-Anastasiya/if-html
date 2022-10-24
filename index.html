@@ -3,146 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <title>Home</title>
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <h1>Моя первая страница</h1>
-    <p><a href="./about/index.html">Об Авторе</a></p>
-    <hr />
-    <img
-      src="https://cs8.pikabu.ru/post_img/big/2016/04/16/6/1460800142191760298.png"
-      alt="astronaut cat"
-      width="20%"
-      height="20%"
-    />
-    <ol>
-      <li>
-        Знакомство с Web
-        <ul>
-          <li>Краткая история Web и как устроен интернет</li>
-          <li>Как устроен браузер и как он получает страницы по сети</li>
-          <li>Что такое Git</li>
-          <li>Создание первого репозитория</li>
-          <li>О файле .gitignore</li>
-        </ul>
-      </li>
-      <li>
-        HTML-вёрстка – первые шаги
-        <ul>
-          <li>Настройка рабочей среды</li>
-          <li>Краткая история HTML</li>
-          <li>Типы тегов и атрибуты</li>
-          <li>Теги для работы с текстом</li>
-          <li>Создание собственной страницы</li>
-          <li>Основы ветвления в Git</li>
-          <li>Создание pull request на GitHub</li>
-        </ul>
-      </li>
-      <li>
-        Погружение в HTML-разметку
-        <ul>
-          <li>Мета-теги</li>
-          <li>Мнемоники</li>
-          <li>Теги для работы со списками</li>
-          <li>Теги для работы с таблицами</li>
-          <li>Теги для работы с формами</li>
-          <li>div и span</li>
-        </ul>
-      </li>
-    </ol>
-    <table border="2" width="40%">
-      <tr>
-        <th>Tag</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <th align="left">&#60;table&#62;</th>
-        <th align="left">Defines a table</th>
-      </tr>
-      <tr>
-        <th align="left">&#60;tr&#62;</th>
-        <th align="left">Defines a row in a table</th>
-      </tr>
-      <tr>
-        <th align="left">&#60;th&#62;</th>
-        <th align="left" rowspan="2">
-          Defines a "header cell"/"cell" in a table
-        </th>
-      </tr>
-      <tr>
-        <th align="left">&#60;td&#62;</th>
-      </tr>
-      <tr>
-        <th align="left" colspan="2">Rarely used</th>
-      </tr>
-      <tr>
-        <th align="left">&#60;caption&#62;</th>
-        <th align="left">Defines a table caption</th>
-      </tr>
-      <tr>
-        <th align="left">&#60;thead&#62;</th>
-        <th align="left">Groups the header content in a table</th>
-      </tr>
-      <tr>
-        <th align="left">&#60;tbody&#62;</th>
-        <th align="left">Groups the body content in a table</th>
-      </tr>
-      <tr>
-        <th align="left">&#60;tfoot&#62;</th>
-        <th align="left">Groups the footer content in a table</th>
-      </tr>
-    </table>
-    <fieldset>
-      <legend>My First form</legend>
-      <form action="/" method="get">
-        <p>
-          <label for="name">Name</label><br />
-          <input name="name" id="name" type="text" placeholder="Name" required />
-        </p>
-        <p>
-          <label for="email">Email</label><br />
-          <input name="email" id="email" type="text" required />
-        </p>
-        <p>
-          <label for="password">Password</label><br />
-          <input name="password" id="password" type="password" required />
-        </p>
-        <p>
-          <label for="level">Your programming level</label><br />
-          <input name="level" id="level" type="range" min="0" max="10" />
-        </p>
-        <p>
-          What does HTML stand for?<br />
-          <input id="html-1" name="html" type="checkbox" value="1" />
-          <label for="html-1">Hyperlinks and Text Markup Language</label><br />
-          <input id="html-2" name="html" type="checkbox" value="2" />
-          <label for="html-2">Home Tool Markup Language</label><br />
-          <input id="html-3" name="html" type="checkbox" value="3" />
-          <label for="html-3">Hyper Text Markup Language</label>
-        </p>
-        <p>
-          What does HTML stand for?<br />
-          <input id="html-4" name="http" type="radio" value="1" />
-          <label for="html-4">Hyperlinks and Text Markup Language</label><br />
-          <input id="html-5" name="http" type="radio" value="2" />
-          <label for="html-5">Home Tool Markup Language</label><br />
-          <input id="html-6" name="http" type="radio" value="3" />
-          <label for="html-6">Hyper Text Markup Language</label>
-        </p>
-        <p>
-          <label for="comment">Comment</label><br />
-          <textarea id="comment" maxlength="500" name="comment">Comment</textarea>
-        </p>
-        <p>
-          <label for="select"> What does HTML stand for?</label><br />
-          <select id="select" name="select_html">
-            <option disabled selected>Your answer</option>
-            <option value="1">Hyperlinks and Text Markup Language</option>
-            <option value="2">Home Tool Markup Language</option>
-            <option value="3">Hyper Text Markup Language</option>
-          </select>
-        </p>
-        <button>Send</button>
-      </form>
-    </fieldset>
+    <div class="block">
+      <h1>What do we offer</h1>
+      <hr />
+      <img
+        class="headset-mic-outlined"
+        src="./images/headset-mic-outlined.png"
+        alt="headset-mic-outlined"
+      />
+      <img
+        src="./images/forum-outlined.png"
+        alt="forum-outlined"
+        class="forum-outlined"
+      />
+      <img
+        class="devices-outlined"
+        src="./images/devices-outlined.png"
+        alt="devices-outlined"
+      />
+      <img
+        class="thumb-up-alt-outlined"
+        src="./images/thumb-up-alt-outlined.png"
+        alt="thumb-up-alt-outlined"
+      />
+      <p class="p1">Support 24/7</p>
+      <p class="p2">Communicate directly</p>
+      <p class="p3">Book online</p>
+      <p class="p4">Real guest reviews</p>
+    </div>
   </body>
 </html>
