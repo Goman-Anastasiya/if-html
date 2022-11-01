@@ -1,73 +1,58 @@
-h1 {
-  text-align: center;
-  width: 306px;
-  height: 47px;
-  padding: 120px 567px 20px;
+@import url('./fonts.css');
+.advantages-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 110px 104px;
+    row-gap: 66px;
+    width: 1440px;
+    height: 569px;
+ }
+.hr-line{
+    width: 100px;
+    height: 4px;
+    background-color: #F5BD41;
+    border: none;
 }
-hr {
-  border: 4px;
-  background-color: #faf004fd;
-  height: 4px;
-  width: 100px;
-  margin: 20px 670px 80px;
+.advantages-content-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
-.block {
-  width: 1440px;
-  height: 569px;
+.heading{
+    font-family: 'Roboto',sans-serif;
+    font-size:40px;
+    color: #383838;
+    margin-bottom:20px;
 }
-.headset-mic-outlined {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  padding: 0px 0px 48px 202px;
+.advantages-content-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    font-family:'Roboto', sans-serif;
+    font-size:24px;
 }
-.forum-outlined {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  padding: 0px 0px 48px 231px;
+.footer {
+    display: flex;
+    width: 1440px;
+    height: 625px;
+    background-color:#10367C;
+    justify-content: space-between;
+    flex-wrap:wrap;
 }
-.devices-outlined {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  padding: 0px 0px 48px 221px;
+.footer-content{
+    color: #FFFFFF;
+    margin-top: 120px;
+    margin-left: 104px;
+    width: 25%;
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
 }
-.thumb-up-alt-outlined {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  padding: 0px 0px 48px 212px;
-}
-.p1 {
-  text-align: center;
-  width: 141px;
-  height: 28px;
-  display: inline;
-  padding: 0px 94px 122px 210px;
-  margin: 0;
-}
-.p2 {
-  text-align: center;
-  width: 296px;
-  height: 28px;
-  display: inline-block;
-  padding: 0px 80px 122px 50px;
-  margin: 0;
-}
-.p3 {
-  text-align: center;
-  width: 168px;
-  height: 28px;
-  display: inline-block;
-  padding: 0px 120px 122px 0px;
-  margin: 0;
-}
-.p4 {
-  text-align: center;
-  width: 225px;
-  height: 28px;
-  display: inline-block;
-  padding: 0px 90px 122px 0px;
-  margin: 0;
+.items{
+    font-size: 14px;
 }
