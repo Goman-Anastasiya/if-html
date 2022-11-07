@@ -1,0 +1,52 @@
+.advantages-title {
+  text-align: center;
+  width: 306px;
+  height: 47px;
+  margin: 0;
+  padding: 120px 567px 0;
+}
+
+.dividing-line {
+  border: 4px;
+  background-color: #faf004fd;
+  height: 4px;
+  width: 100px;
+  margin: 20px 670px 80px;
+}
+
+.block {
+  width: 1440px;
+  height: 569px;
+}
+
+.headset-mic-outlined {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding: 0 0 48px 200px;
+}
+
+.forum-outlined {
+  display: inline-block;
+  width: 168px;
+  height: 100px;
+  text-align: center;
+  padding: 0 0 48px 230px;
+}
+
+.devices-outlined {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding: 0 0 48px 180px;
+}
+
+.thumb-up-alt-outlined {
+  display: inline-block;
+  width: 225px;
+  height: 100px;
+  text-align: center;
+  padding: 0 0 48px 212px;
+}
