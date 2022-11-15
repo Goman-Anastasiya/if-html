@@ -1,74 +1,75 @@
-@import url('./fonts.css');
-.advantages-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 110px 104px;
-    row-gap: 66px;
-    width: 1440px;
-    height: 569px;
- }
+@import url("./fonts.css");
 
-.hr-line{
-    width: 100px;
-    height: 4px;
-    background-color: #F5BD41;
-    border: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.advantages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 110px 104px;
+  row-gap: 66px;
+}
+
+.hr-line {
+  height: 4px;
+  background-color: #f5bd41;
+  border: none;
 }
 
 .advantages-content-container {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
-.heading{
-    font-family: 'Roboto',sans-serif;
-    font-size:40px;
-    color: #383838;
-    margin-bottom:20px;
+.heading {
+  font-size: 40px;
+  color: #383838;
+  margin-bottom: 20px;
 }
 
-.advantages-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 30px;
-    font-family:'Roboto', sans-serif;
-    font-size:24px;
+.advantages-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  font-size: 24px;
 }
 
 .footer {
-    display: flex;
-    width: 1440px;
-    height: 625px;
-    background-color:#10367C;
-    flex-flow: row wrap;
-    margin: 0;
+  display: flex;
+  background-color: #10367c;
+  flex-flow: row wrap;
+  margin: 0;
 }
 
-.footer-content{
-    color: #FFFFFF;
-    width: 20%;
-    margin-top: 120px;
-    margin-left: 104px;
-    font-family:'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 23px;
-}
-.copyright{
-    font-size: 14px;
+.footer-content {
+  display: flex;
+  color: #ffffff;
+  width: 20%;
+  margin-top: 120px;
+  margin-left: 104px;
+  font-weight: 400;
+  line-height: 23px;
 }
 
-.title-list{
-    font-weight: bold;
-
+.copyright {
+  font-size: 14px;
 }
 
-.list-content{
-    list-style-type: none;
-    font-size:20px;
-    line-height: 2;
+.title-list {
+  font-weight: bold;
+}
+
+.list-content {
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 2;
 }
