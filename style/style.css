@@ -1,4 +1,151 @@
 @import url("./fonts.css");
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../images/background/castelmezzano-1979546 1.svg");
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.header {
+  width:1232px ;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 51px;
+  margin-bottom:202px;
+}
+
+.logo-header {
+  width: 205px;
+  height: 40px;
+  margin-right: 684px;
+}
+
+.line{
+  border-bottom: solid #f5bd41;
+}
+
+.link-header {
+  display:flex;
+  gap: 24px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+  padding-bottom: 48px;
+}
+
+.header-button{
+  background-color: rgba(28,28,28,0);
+  border: none;
+}
+
+.header-icon-night {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/sprites.png");
+  background-position: 0 0;
+  margin:0 24px 0 48px;
+}
+
+.header-icon-account {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/sprites.png");
+  background-position: -30px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.page-heading {
+  font-weight: 500;
+  font-size: 50px;
+  padding-bottom: 100px;
+}
+
+.page-label {
+  display: flex;
+  gap: 221px;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 24px;
+}
+
+.search {
+  display: flex;
+  width: 1223px;
+  height: 64px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.search-input-name {
+  width: 386px;
+  height: 64px;
+  border: 3px;
+  border-radius: 8px;
+  text-align: center;
+  color: #383838;
+}
+
+.search-input {
+  width: 259px;
+  height: 64px;
+  border-radius: 8px;
+  border: 3px solid #f5bd41;
+  text-align: center;
+  color: #383838;
+}
+
+.search-button {
+  width: 192px;
+  height: 64px;
+  border: 3px;
+  border-radius: 8px;
+  background-color: #3077c6;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.apps {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  gap: 20px;
+}
+
+.app-android {
+  width: 135px;
+  height: 40px;
+  background-image: url("../images/sprites.png");
+  background-position: -70px;
+}
+
+.app-apple {
+  width: 120px;
+  height: 40px;
+  background-image: url("../images/sprites.png");
+  background-position: -207px;
+}
+
 .advantages-container {
   display: flex;
   flex-direction: column;
@@ -70,151 +217,4 @@
   list-style-type: none;
   font-size: 20px;
   line-height: 2;
-}
-
-.top-section {
-  /*display: flex;*/
-  width: 2200px;
-  height: 1203px;
-  background-image: url("../images/background/castelmezzano-1979546 1.svg");
-  background-repeat: no-repeat;
-  object-fit: contain;
-  min-height: 100vh;
-  font-family: "Roboto", sans-serif;
-}
-
-.header {
-  width: 1232px;
-  height: 46px;
-  display: flex;
-  /*justify-content: space-between;*/
-  padding-top: 51px;
-  margin: 0 0 202px 104px;
-}
-
-.page {
-  display: flex;
-  width: 1232px;
-  height: 487px;
-  flex-direction: column;
-  color: #ffffff;
-  margin: 0 0 0 104px;
-}
-
-.lineStays {
-  width: 50px;
-  height: 4px;
-  background-color: #f5bd41;
-  margin: 12px 0 0 6px;
-  border: none;
-}
-
-.logo-header {
-  width: 205px;
-  height: 40px;
-  margin-right: 684px;
-}
-
-.link-header {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 24px;
-  margin-right: 24px;
-}
-
-.page-heading {
-  text-align: left;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 50px;
-}
-
-.page-label {
-  display: flex;
-  flex-direction: row;
-  gap: 221px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  margin-bottom: 24px;
-}
-
-.search {
-  width: 1232px;
-  height: 64px;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-}
-
-.search-input-name {
-  width: 376px;
-  height: 56px;
-  border: 3px;
-  border-radius: 8px;
-  text-align: left;
-  color: #383838;
-}
-
-.search-input {
-  width: 258px;
-  height: 50px;
-  border-radius: 8px;
-  border: 3px solid #f5bd41;
-  text-align: center;
-  color: #383838;
-}
-
-.search-button {
-  width: 190px;
-  height: 64px;
-  border: 3px;
-  border-radius: 8px;
-  background-color: #3077c6;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-}
-
-.header-icon-night {
-  width: 30px;
-  height: 30px;
-  background-image: url("../images/sprites.png");
-  background-position: 0 0;
-  margin-right: 24px;
-}
-
-.header-icon-account {
-  width: 40px;
-  height: 40px;
-  background-image: url("../images/sprites.png");
-  background-position: -30px;
-}
-
-.apps {
-  display: flex;
-  justify-content: center;
-  margin-top: 120px;
-  gap: 20px;
-}
-
-.app-android {
-  width: 135px;
-  height: 40px;
-  background-image: url("../images/sprites.png");
-  background-position: -70px;
-}
-
-.app-apple {
-  width: 120px;
-  height: 40px;
-  background-image: url("../images/sprites.png");
-  background-position: -207px;
 }
