@@ -1,52 +1,75 @@
-.advantages-title {
-  text-align: center;
-  width: 306px;
-  height: 47px;
+@import url("./fonts.css");
+
+* {
   margin: 0;
-  padding: 120px 567px 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
 
-.dividing-line {
-  border: 4px;
-  background-color: #faf004fd;
+.advantages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 110px 104px;
+  row-gap: 66px;
+}
+
+.hr-line {
   height: 4px;
-  width: 100px;
-  margin: 20px 670px 80px;
+  background-color: #f5bd41;
+  border: none;
 }
 
-.block {
-  width: 1440px;
-  height: 569px;
+.advantages-content-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
-.headset-mic-outlined {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  padding: 0 0 48px 200px;
+.heading {
+  font-size: 40px;
+  color: #383838;
+  margin-bottom: 20px;
 }
 
-.forum-outlined {
-  display: inline-block;
-  width: 168px;
-  height: 100px;
-  text-align: center;
-  padding: 0 0 48px 230px;
+.advantages-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  font-size: 24px;
 }
 
-.devices-outlined {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  padding: 0 0 48px 180px;
+.footer {
+  display: flex;
+  background-color: #10367c;
+  flex-flow: row wrap;
+  margin: 0;
 }
 
-.thumb-up-alt-outlined {
-  display: inline-block;
-  width: 225px;
-  height: 100px;
-  text-align: center;
-  padding: 0 0 48px 212px;
+.footer-content {
+  display: flex;
+  color: #ffffff;
+  width: 20%;
+  margin-top: 120px;
+  margin-left: 104px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.title-list {
+  font-weight: bold;
+}
+
+.list-content {
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 2;
 }
