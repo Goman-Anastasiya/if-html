@@ -1,64 +1,77 @@
 @import url("./fonts.css");
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
+
+.container {
+  max-width: 1224px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 .top-section {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url("../images/background/castelmezzano-1979546 1.jpg");
   background-repeat: no-repeat;
-  object-fit: contain;
- }
+  background-size: cover;
+}
 
 .header {
-
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  margin-bottom:202px;
+  margin-bottom: 150px;
 }
 
 .header__logo {
   width: 205px;
   height: 40px;
-  margin-right: 684px;
   background-image: url("../images/sprites.svg");
   background-position: 0 0;
 }
 
-.line{
-  border-bottom: solid #f5bd41;
+.line {
+  border-bottom: 4px solid #f5bd41;
+}
+
+.header__link-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.header__link-container {
+  display: flex;
+  gap: 48px;
 }
 
 .header__link {
-  display:flex;
-  gap: 24px;
   text-decoration: none;
   color: #ffffff;
   font-size: 24px;
   padding-bottom: 12px;
 }
 
-.header__button{
-  background-color: rgba(28,28,28,0);
+.header__button {
+  background-color: rgba(28, 28, 28, 0);
   border: none;
 }
 
-.header__icon--night {
+.header__icon-night {
   width: 30px;
   height: 30px;
   background-image: url("../images/sprites.svg");
   background-position: -205px;
-  margin:0 24px 0 48px;
 }
 
-.header__icon--account {
+.header__icon-account {
   width: 40px;
   height: 40px;
   background-image: url("../images/sprites.svg");
@@ -79,7 +92,7 @@
 
 .page__label {
   display: flex;
-  gap: 221px;
+  gap: 150px;
   font-size: 18px;
   line-height: 21px;
   margin-bottom: 24px;
@@ -153,8 +166,12 @@
   justify-content: center;
   padding: 110px 104px;
   row-gap: 66px;
-  width: 1440px;
-  height: 569px;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advantages__heading {
@@ -183,15 +200,13 @@
   row-gap: 30px;
   font-size: 24px;
 }
-.advantages__content--svg{
+.advantages__content--svg {
   width: 100px;
   height: 100px;
 }
 
 .footer {
   display: flex;
-  width: 1440px;
-  height: 625px;
   background-color: #10367c;
   flex-flow: row wrap;
   margin: 0;
@@ -217,4 +232,9 @@
   list-style-type: none;
   font-size: 20px;
   line-height: 2;
+}
+
+.list__content-link {
+  text-decoration: none;
+  color: #ffffff;
 }
