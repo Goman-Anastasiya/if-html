@@ -5,38 +5,40 @@
     <meta name="description" content="Lesson 3 on Front-end development" />
     <meta name="keywords" content="List,Table,Forms,HTML" />
     <meta name="author" content="Goman Anastasiya" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <div class="top-section">
-      <div class="header">
+      <header class="header">
         <img
           class="logo-header"
           src="./images/logo/logo_vector.svg"
           alt="Logo"
         />
         <div class="link-header">
-        <a class="link-header line" href="/">Stays</a>
-        <a class="link-header" href="/">Attractions</a>
+          <a class="link-header line" href="/">Stays</a>
+          <a class="link-header" href="/">Attractions</a>
         </div>
         <button class="header-button header-icon-night"></button>
         <button class="header-button header-icon-account"></button>
-
-      </div>
+      </header>
       <div class="page">
         <h2 class="page-heading">
           Discover stays <br />
           to live, work or just relax
         </h2>
         <div class="page-label">
-          <p>Your destination or hotel name</p>
-          <p>Check-in — Check-out</p>
+          <label for="search__input-name">
+            Your destination or hotel name
+          </label>
+          <label for="date">Check-in — Check-out</label>
         </div>
         <form class="search">
           <label>
             <input
+              id="search__input-name"
               class="search-input-name"
               type="text"
               placeholder="New York"
@@ -44,6 +46,7 @@
           </label>
           <label>
             <input
+              id="date"
               class="search-input"
               type="text"
               placeholder="Tue 15 Sept — Sat 19 Sept"
@@ -59,8 +62,12 @@
           <button class="search-button">Search</button>
         </form>
         <div class="apps">
-          <div class="app-android"></div>
-          <div class="app-apple"></div>
+          <a href="https://play.google.com/store/apps?hl=ru&gl=US&pli=1">
+            <div class="app-android"></div>
+          </a>
+          <a href="https://www.apple.com/ru/app-store/">
+            <div class="app-apple"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -88,37 +95,61 @@
         </div>
       </div>
     </div>
-    <div class="footer">
+    <footer class="footer">
       <div class="footer-content">
         <ul>
-          <li class="title-list list-content">About</li>
-          <li class="list-content">How Triphouse works</li>
-          <li class="list-content">Careers</li>
-          <li class="list-content">Privacy</li>
-          <li class="list-content">Terms</li>
+          <li class="list-title list-content">About</li>
+          <li class="list-content">
+            <a href="" class="list-content-link">How Triphouse works</a>
+          </li>
+          <li class="list-content">
+            <a href="" class="list-content-link">Careers</a>
+          </li>
+          <li class="list-content">
+            <a href="" class="list-content-link">Privacy</a>
+          </li>
+          <li class="list-content">
+            <a href="" class="list-content-link">Terms</a>
+          </li>
         </ul>
       </div>
       <div class="footer-content">
         <ul>
-          <li class="title-list list-content">Property types</li>
-          <li class="list-content">Guest houses</li>
-          <li class="list-content">Hotels</li>
-          <li class="list-content">Apartments</li>
-          <li class="list-content">Villas</li>
-          <li class="list-content">Holiday homes</li>
-          <li class="list-content">Hostels</li>
+          <li class="list-title list-content">Property types</li>
+          <li class="list-content">
+            <a href="" class="list-content-link">Guest houses</a>
+          </li>
+          <li class="list-content">
+            <a href="" class="list-content-link">Hotels</a>
+          </li>
+          <li class="list-content">
+            <a href="" class="list-content-link">Apartments</a>
+          </li>
+          <li class="list-content">
+            <a href="" class="list-content-link">Villas</a>
+          </li>
+          <li class="list-content">
+            <a href="" class="list-content-link">Holiday homes</a>
+          </li>
+          <li class="list-content">
+            <a href="" class="list-content-link">Hostels</a>
+          </li>
         </ul>
       </div>
       <div class="footer-content">
         <ul>
-          <li class="title-list list-content">Support</li>
-          <li class="list-content">Contact Customer Service</li>
-          <li class="list-content">FAQ</li>
+          <li class="list-title list-content">Support</li>
+          <li class="list-content">
+            <a href="" class="list-content-link">Contact Customer Service</a>
+          </li>
+          <li class="list-content">
+            <a href="" class="list-content-link">FAQ</a>
+          </li>
         </ul>
       </div>
       <div class="footer-content copyright">
         <p><sup>&copy;</sup>2022Triphouse, Inc. All rights reserved</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

@@ -1,26 +1,26 @@
 @import url("./fonts.css");
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
 .top-section {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url("../images/background/castelmezzano-1979546 1.jpg");
   background-repeat: no-repeat;
-  object-fit: contain;
- }
+  background-size: cover;
+}
 
 .header {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
-  padding-bottom:202px;
+  padding-bottom: 150px;
 }
 
 .logo-header {
@@ -29,12 +29,12 @@
   margin-right: 684px;
 }
 
-.line{
+.line {
   border-bottom: solid #f5bd41;
 }
 
 .link-header {
-  display:flex;
+  display: flex;
   gap: 24px;
   text-decoration: none;
   color: #ffffff;
@@ -42,8 +42,8 @@
   padding-bottom: 12px;
 }
 
-.header-button{
-  background-color: rgba(28,28,28,0);
+.header-button {
+  background-color: rgba(28, 28, 28, 0);
   border: none;
 }
 
@@ -52,7 +52,7 @@
   height: 30px;
   background-image: url("../images/sprites.png");
   background-position: 0 0;
-  margin:0 24px 0 48px;
+  margin: 0 24px 0 48px;
 }
 
 .header-icon-account {
@@ -76,7 +76,7 @@
 
 .page-label {
   display: flex;
-  gap: 221px;
+  gap: 180px;
   font-size: 18px;
   line-height: 21px;
   margin-bottom: 24px;
@@ -124,7 +124,7 @@
 .apps {
   display: flex;
   justify-content: center;
-  margin-top: 110px;
+  margin-top: 58px;
   gap: 20px;
   padding-bottom: 120px;
 }
@@ -150,8 +150,6 @@
   justify-content: center;
   padding: 110px 104px;
   row-gap: 66px;
-  width: 1440px;
-  height: 569px;
 }
 
 .hr-line {
@@ -185,8 +183,6 @@
 
 .footer {
   display: flex;
-  width: 1440px;
-  height: 625px;
   background-color: #10367c;
   flex-flow: row wrap;
   margin: 0;
@@ -214,4 +210,9 @@
   list-style-type: none;
   font-size: 20px;
   line-height: 2;
+}
+
+.list-content-link {
+  text-decoration: none;
+  color: #ffffff;
 }
