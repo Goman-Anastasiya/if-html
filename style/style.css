@@ -1,5 +1,4 @@
 @import url("./fonts.css");
-
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +7,159 @@
   font-style: normal;
 }
 
-.advantages-container {
+.container {
+  max-width: 1224px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.top-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/background/castelmezzano-1979546 1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.header__logo {
+  width: 205px;
+  height: 40px;
+  background-image: url("../images/sprites.svg");
+  background-position: 0 0;
+}
+
+.line {
+  border-bottom: 4px solid #f5bd41;
+}
+
+.header__link-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.header__link-container {
+  display: flex;
+  gap: 48px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+  padding-bottom: 12px;
+}
+
+.header__button {
+  background-color: rgba(28, 28, 28, 0);
+  border: none;
+}
+
+.header__icon-night {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/sprites.svg");
+  background-position: -205px;
+}
+
+.header__icon-account {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/sprites.svg");
+  background-position: -235px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.page__heading {
+  font-weight: 500;
+  font-size: 50px;
+  padding-bottom: 80px;
+}
+
+.page__label {
+  display: flex;
+  gap: 150px;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 24px;
+}
+
+.search {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.search__input-name {
+  width: 386px;
+  height: 64px;
+  border: 3px;
+  border-radius: 8px;
+  text-align: center;
+  color: #383838;
+}
+
+.search__input {
+  width: 259px;
+  height: 64px;
+  border-radius: 8px;
+  border: 3px solid #f5bd41;
+  text-align: center;
+  color: #383838;
+}
+
+.search__button {
+  width: 192px;
+  height: 64px;
+  border: 3px;
+  border-radius: 8px;
+  background-color: #3077c6;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.apps {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+  gap: 20px;
+  padding-bottom: 120px;
+}
+
+.app__android {
+  width: 135px;
+  height: 40px;
+  background-image: url("../images/sprites.svg");
+  background-position: -275px;
+}
+
+.app__apple {
+  width: 120px;
+  height: 40px;
+  background-image: url("../images/sprites.svg");
+  background-position: -410px;
+}
+
+.advantages {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,30 +168,41 @@
   row-gap: 66px;
 }
 
-.hr-line {
-  height: 4px;
-  background-color: #f5bd41;
-  border: none;
-}
-
-.advantages-content-container {
+.heading-container {
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
-.heading {
+.advantages__heading {
   font-size: 40px;
   color: #383838;
   margin-bottom: 20px;
 }
 
-.advantages-content {
+.advantages__hr-line {
+  width: 100px;
+  height: 4px;
+  background-color: #f5bd41;
+  border: none;
+}
+
+.advantages__container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.advantages__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 30px;
   font-size: 24px;
+}
+.advantages__content--svg {
+  width: 100px;
+  height: 100px;
 }
 
 .footer {
@@ -50,8 +212,7 @@
   margin: 0;
 }
 
-.footer-content {
-  display: flex;
+.footer__content {
   color: #ffffff;
   width: 20%;
   margin-top: 120px;
@@ -59,17 +220,21 @@
   font-weight: 400;
   line-height: 23px;
 }
-
 .copyright {
   font-size: 14px;
 }
 
-.title-list {
+.list__title {
   font-weight: bold;
 }
 
-.list-content {
+.list__content {
   list-style-type: none;
   font-size: 20px;
   line-height: 2;
+}
+
+.list__content-link {
+  text-decoration: none;
+  color: #ffffff;
 }
