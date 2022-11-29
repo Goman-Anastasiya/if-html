@@ -30,7 +30,7 @@
 }
 
 .line {
-  border-bottom: solid #f5bd41;
+  border-bottom: 4px solid #f5bd41;
 }
 
 .link-header {
@@ -50,16 +50,16 @@
 .header-icon-night {
   width: 30px;
   height: 30px;
-  background-image: url("../images/sprites.png");
-  background-position: 0 0;
+  background-image: url("../images/sprites.svg");
+  background-position: -205px;
   margin: 0 24px 0 48px;
 }
 
 .header-icon-account {
   width: 40px;
   height: 40px;
-  background-image: url("../images/sprites.png");
-  background-position: -30px;
+  background-image: url("../images/sprites.svg");
+  background-position: -235px;
 }
 
 .page {
@@ -132,15 +132,15 @@
 .app-android {
   width: 135px;
   height: 40px;
-  background-image: url("../images/sprites.png");
-  background-position: -70px;
+  background-image: url("../images/sprites.svg");
+  background-position: -275px;
 }
 
 .app-apple {
   width: 120px;
   height: 40px;
-  background-image: url("../images/sprites.png");
-  background-position: -207px;
+  background-image: url("../images/sprites.svg");
+  background-position: -410px;
 }
 
 .advantages-container {
@@ -150,6 +150,12 @@
   justify-content: center;
   padding: 110px 104px;
   row-gap: 66px;
+}
+
+.advantages-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hr-line {
