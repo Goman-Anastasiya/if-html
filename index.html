@@ -5,7 +5,7 @@
     <meta name="description" content="Lesson 3 on Front-end development" />
     <meta name="keywords" content="List,Table,Forms,HTML" />
     <meta name="author" content="Goman Anastasiya" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="./style/style.css" />
   </head>
@@ -73,25 +73,25 @@
         <hr class="advantages__hr-line" />
       </div>
       <div class="advantages__container">
-        <div class="advantages__content">
+        <div class="advantages__content col-lg-3 col-md-6 col-sm-6">
           <svg class="advantages__content--svg">
             <use href="../images/sprite.svg/#support" />
           </svg>
           <p>Support 24/7</p>
         </div>
-        <div class="advantages__content">
+        <div class="advantages__content col-lg-3 col-md-6 col-sm-6">
           <svg class="advantages__content--svg">
             <use href="../images/sprite.svg/#communication" />
           </svg>
           <p>Communicate directly</p>
         </div>
-        <div class="advantages__content">
+        <div class="advantages__content col-lg-3 col-md-6 col-sm-6">
           <svg class="advantages__content--svg">
             <use href="../images/sprite.svg/#booking" />
           </svg>
           <p>Book online</p>
         </div>
-        <div class="advantages__content">
+        <div class="advantages__content col-lg-3 col-md-6 col-sm-6">
           <svg class="advantages__content--svg">
             <use href="../images/sprite.svg/#reviews" />
           </svg>
@@ -100,9 +100,15 @@
       </div>
     </div>
     <footer class="footer">
+      <svg class="footer_title">
+        <use href="../images/sprite.svg/#logo-vector" />
+      </svg>
+      <div class="footer__container">
       <div class="footer__content">
         <ul>
-          <li class="list__title list__content">About</li>
+          <li class="list__title">
+            <a href="" class="list__title">About</a>
+          </li>
           <li class="list__content">
             <a href="" class="list__content-link">How Triphouse works</a>
           </li>
@@ -119,7 +125,9 @@
       </div>
       <div class="footer__content">
         <ul>
-          <li class="list__title list__content">Property types</li>
+          <li class="list__title">
+            <a href="" class="list__title">Property types</a>
+          </li>
           <li class="list__content">
             <a href="" class="list__content-link">Guest houses</a>
           </li>
@@ -142,7 +150,9 @@
       </div>
       <div class="footer__content">
         <ul>
-          <li class="list__title list__content">Support</li>
+          <li class="list__title">
+            <a href="" class="list__title">Support</a>
+          </li>
           <li class="list__content">
             <a href="" class="list__content-link">Contact Customer Service</a>
           </li>
@@ -151,6 +161,7 @@
           </li>
         </ul>
       </div>
+            </div>
       <div class="footer__content copyright">
         <p><sup>&copy;</sup>2022Triphouse, Inc. All rights reserved</p>
       </div>
