@@ -80,10 +80,6 @@
   background-position: 0 0;
 }
 
-.line {
-  border-bottom: 4px solid #f5bd41;
-}
-
 .header__link-wrapper {
   display: flex;
   gap: 24px;
@@ -99,6 +95,9 @@
   color: var(--font-color);
   font-size: 24px;
   padding-bottom: 12px;
+}
+.header__link:hover {
+  border-bottom: 4px solid #f5bd41;
 }
 
 .header__button {
@@ -250,13 +249,18 @@
   font-size: 40px;
   color: #383838;
   margin-bottom: 20px;
+  position: relative;
 }
 
-.advantages__hr-line {
+.advantages__heading::after {
+  content: "";
   width: 100px;
   height: 4px;
   background-color: #f5bd41;
-  border: none;
+  position: absolute;
+  transform: translate(50%, 50%);
+  top: 140%;
+  left: 20%;
 }
 
 .advantages__container {
@@ -277,6 +281,61 @@
 .advantages__content--svg {
   width: 100px;
   aspect-ratio: 1/1;
+}
+
+.homes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaf0f9;
+  gap: 105px;
+  padding: 120px 0;
+}
+
+.homes_container {
+  display: flex;
+  gap: 1rem;
+}
+
+.homes__heading {
+  font-size: 40px;
+  color: #383838;
+  margin-bottom: 20px;
+}
+
+.homes__hotel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.homes_img {
+  width: 18.5rem;
+  aspect-ratio: 1/1;
+}
+
+.homes__hotel a {
+  text-decoration: none;
+  color: #3077c6;
+  font-size: 24px;
+}
+
+.homes__hotel p {
+  font-size: 24px;
+  color: #bfbfbf;
+}
+
+.homes__arrow {
+  width: 40px;
+  aspect-ratio: 1/1;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 8rem;
+  margin-left: -2rem;
+  background-color: rgba(28, 28, 28, 0);
+  border: none;
 }
 
 .footer {
@@ -370,17 +429,20 @@
     font-size: 15px;
     margin-bottom: 32px;
   }
+  .homes_container {
+    flex-wrap: wrap;
+  }
 
   .footer__container {
     justify-content: space-evenly;
     flex-flow: row nowrap;
     margin-bottom: 30px;
     gap: 16px;
+    padding-left: 20px;
   }
 
   .footer__content {
-    width: 50%;
-    padding-left: 70px;
+    width: 100%;
     margin: 0;
   }
 
@@ -403,6 +465,7 @@
 
   .copyright {
     font-size: 12px;
+    padding-left: 20px;
   }
 }
 
@@ -430,27 +493,32 @@
   .col-sm-6 {
     width: calc(var(--col-width) * 6);
   }
+
   .header {
     margin-top: 12px;
     margin-bottom: 52px;
   }
+
   .header__logo {
     width: 122px;
     background-image: url("../images/spites-mobile.svg");
     background-position: 0 0;
   }
+
   .header__icon-night {
     width: 16px;
     height: 24px;
     background-image: url("../images/spites-mobile.svg");
     background-position: -122px;
   }
+
   .header__icon-account {
     width: 24px;
     height: 24px;
     background-image: url("../images/spites-mobile.svg");
     background-position: -138px;
   }
+
   .header__icon-menu {
     display: unset;
     width: 24px;
@@ -458,6 +526,7 @@
     background-image: url("../images/spites-mobile.svg");
     background-position: -162px;
   }
+
   .header__link-container,
   .header__link-wrapper {
     gap: 16px;
@@ -466,14 +535,17 @@
   .header__link {
     display: none;
   }
+
   .page__heading {
     font-size: 30px;
     padding-bottom: 31px;
   }
+
   .page {
     justify-content: center;
     align-items: center;
   }
+
   .search {
     width: 328px;
     display: flex;
@@ -484,9 +556,11 @@
     gap: 8px;
     position: relative;
   }
+
   .search__input-dash {
     display: none;
   }
+
   .search__input-name,
   .search__input {
     display: flex;
@@ -501,22 +575,28 @@
     border-style: none solid none none;
     border-right-color: black;
   }
+
   .search__input:last-child {
     border-radius: 4px;
   }
+
   .person_input:nth-child(2n) {
     border-radius: 0;
   }
+
   .search__input-name {
     margin-top: 8px;
   }
+
   .person_input:last-child {
     border-color: #f5bd41;
   }
+
   .search__date {
     gap: 0.5rem;
   }
-  .page__label{
+
+  .page__label {
     display: none;
   }
 
@@ -548,5 +628,39 @@
 
   .advantages__content--svg {
     width: 70px;
+  }
+
+  .homes {
+    gap: 32px;
+    padding: 40px 0;
+  }
+  .homes__heading {
+    font-size: 28px;
+  }
+
+  .homes_img {
+    width: 156px;
+    aspect-ratio: 1/1;
+  }
+  .homes_container {
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+  .homes__mob {
+    display: none;
+  }
+  .homes__hotel a {
+    font-size: 12px;
+  }
+  .homes__hotel p {
+    font-size: 12px;
+  }
+  .homes__arrow {
+    width: 28px;
+    aspect-ratio: 1/1;
+    margin-top: 4rem;
+    margin-left: -1.5rem;
+    background-color: rgba(28, 28, 28, 0);
+    border: none;
   }
 }
