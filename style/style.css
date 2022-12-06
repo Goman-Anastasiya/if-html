@@ -13,37 +13,37 @@
 }
 
 .col-lg-1 {
-  width:var(--col-width);
+  width: var(--col-width);
 }
 .col-lg-2 {
-  width: calc(var(--col-width)*2);
+  width: calc(var(--col-width) * 2);
 }
 .col-lg-3 {
-  width: calc(var(--col-width)*3);
+  width: calc(var(--col-width) * 3);
 }
 .col-lg-4 {
-  width:calc(var(--col-width)*4);
+  width: calc(var(--col-width) * 4);
 }
 .col-lg-5 {
-  width: calc(var(--col-width)*5);
+  width: calc(var(--col-width) * 5);
 }
 .col-lg-6 {
   width: 50%;
 }
 .col-lg-7 {
-  width: calc(var(--col-width)*7);
+  width: calc(var(--col-width) * 7);
 }
 .col-lg-8 {
-  width: calc(var(--col-width)*8);
+  width: calc(var(--col-width) * 8);
 }
 .col-lg-9 {
-  width: calc(var(--col-width)*9);
+  width: calc(var(--col-width) * 9);
 }
 .col-lg-10 {
-  width: calc(var(--col-width)*10);
+  width: calc(var(--col-width) * 10);
 }
 .col-lg-11 {
-  width: calc(var(--col-width)*11);
+  width: calc(var(--col-width) * 11);
 }
 .col-lg-12 {
   width: 100%;
@@ -70,7 +70,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 202px;
 }
 
 .header__logo {
@@ -119,6 +119,9 @@
   background-image: url("../images/sprites.svg");
   background-position: -235px;
 }
+.header__icon-menu {
+  display: none;
+}
 
 .page {
   display: flex;
@@ -134,10 +137,18 @@
 
 .page__label {
   display: flex;
-  gap: 150px;
+  gap: 204px;
   font-size: 18px;
   line-height: 21px;
   margin-bottom: 24px;
+}
+.page__label-date {
+  display: flex;
+  gap: 5px;
+}
+
+.page__label-mob {
+  display: none;
 }
 
 .search {
@@ -149,7 +160,7 @@
 }
 
 .search__input-name {
-  width: 386px;
+  width: 32rem;
   height: 64px;
   border: 3px;
   border-radius: 8px;
@@ -158,12 +169,31 @@
 }
 
 .search__input {
-  width: 259px;
+  width: 7rem;
   height: 64px;
-  border-radius: 8px;
-  border: 3px solid #f5bd41;
+  border-radius: 8px 0 0 8px;
+  border: 3px;
   text-align: center;
   color: #383838;
+}
+.search__input:nth-child(3n) {
+  border-radius: 0;
+}
+.search__input-dash {
+  width: 1rem;
+  height: 64px;
+  border: 3px;
+  border-radius: 0;
+}
+.search__input:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.search__date {
+  display: flex;
+}
+.search__person {
+  display: flex;
 }
 
 .search__button {
@@ -300,37 +330,37 @@
 @media (max-width: 1024px) {
   /*For mobile tablets*/
   .col-md-1 {
-    width:var(--col-width);
+    width: var(--col-width);
   }
   .col-md-2 {
-    width: calc(var(--col-width)*2);
+    width: calc(var(--col-width) * 2);
   }
   .col-md-3 {
-    width: calc(var(--col-width)*3);
+    width: calc(var(--col-width) * 3);
   }
   .col-md-4 {
-    width:calc(var(--col-width)*4);
+    width: calc(var(--col-width) * 4);
   }
   .col-md-5 {
-    width: calc(var(--col-width)*5);
+    width: calc(var(--col-width) * 5);
   }
   .col-md-6 {
     width: 50%;
   }
   .col-md-7 {
-    width: calc(var(--col-width)*7);
+    width: calc(var(--col-width) * 7);
   }
   .col-md-8 {
-    width: calc(var(--col-width)*8);
+    width: calc(var(--col-width) * 8);
   }
   .col-md-9 {
-    width: calc(var(--col-width)*9);
+    width: calc(var(--col-width) * 9);
   }
   .col-md-10 {
-    width: calc(var(--col-width)*10);
+    width: calc(var(--col-width) * 10);
   }
   .col-md-11 {
-    width: calc(var(--col-width)*11);
+    width: calc(var(--col-width) * 11);
   }
   .col-md-12 {
     width: 100%;
@@ -376,31 +406,127 @@
   }
 }
 
-@media  (max-width: 768px) {
+@media (max-width: 768px) {
   /* For mobile phones: */
-  :root{
-    --col-width: calc(100% /6);
+  :root {
+    --col-width: calc(100% / 6);
+    --font-color: #ffffff;
   }
   .col-sm-1 {
     width: var(--col-width);
   }
   .col-sm-2 {
-    width: calc(var(--col-width)*2);
+    width: calc(var(--col-width) * 2);
   }
   .col-sm-3 {
-    width: calc(var(--col-width)*3);
+    width: calc(var(--col-width) * 3);
   }
   .col-sm-4 {
-    width: calc(var(--col-width)*4);
+    width: calc(var(--col-width) * 4);
   }
   .col-sm-5 {
-    width: calc(var(--col-width)*5);
+    width: calc(var(--col-width) * 5);
   }
   .col-sm-6 {
-    width: calc(var(--col-width)*6);
+    width: calc(var(--col-width) * 6);
   }
-  :root {
-    --font-color: #ffffff;
+  .header {
+    margin-top: 12px;
+    margin-bottom: 52px;
+  }
+  .header__logo {
+    width: 122px;
+    background-image: url("../images/spites-mobile.svg");
+    background-position: 0 0;
+  }
+  .header__icon-night {
+    width: 16px;
+    height: 24px;
+    background-image: url("../images/spites-mobile.svg");
+    background-position: -122px;
+  }
+  .header__icon-account {
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/spites-mobile.svg");
+    background-position: -138px;
+  }
+  .header__icon-menu {
+    display: unset;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/spites-mobile.svg");
+    background-position: -162px;
+  }
+  .header__link-container,
+  .header__link-wrapper {
+    gap: 16px;
+  }
+
+  .header__link {
+    display: none;
+  }
+  .page__heading {
+    font-size: 30px;
+    padding-bottom: 31px;
+  }
+  .page {
+    justify-content: center;
+    align-items: center;
+  }
+  .search {
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5bd41;
+    border: 4px solid #f5bd41;
+    gap: 8px;
+    position: relative;
+  }
+  .search__input-dash {
+    display: none;
+  }
+  .search__input-name,
+  .search__input {
+    display: flex;
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+  }
+
+  .person_input {
+    height: 48px;
+    border-radius: 4px 0 0 4px;
+    border-style: none solid none none;
+    border-right-color: black;
+  }
+  .search__input:last-child {
+    border-radius: 4px;
+  }
+  .person_input:nth-child(2n) {
+    border-radius: 0;
+  }
+  .search__input-name {
+    margin-top: 8px;
+  }
+  .person_input:last-child {
+    border-color: #f5bd41;
+  }
+  .search__date {
+    gap: 0.5rem;
+  }
+  .page__label{
+    display: none;
+  }
+
+  .search__button {
+    width: 100%;
+    border: 2px solid #f5bd41;
+    margin-bottom: 8px;
+  }
+  .apps {
+    margin-top: 32px;
   }
 
   .advantages__container {
@@ -423,5 +549,4 @@
   .advantages__content--svg {
     width: 70px;
   }
-
 }
