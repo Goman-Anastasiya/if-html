@@ -34,54 +34,69 @@
             to live, work or just relax
           </h1>
           <div class="page__label">
+            <div class="glass"></div>
             <label for="search__input-name">
-              Your destination or hotel name
+             Your destination or hotel name
             </label>
-            <div class="page__label-date">
-              <label for="date">Check-in — </label>
-              <label for="date-out">Check-out</label>
-            </div>
+              <label for="date" class="page__label-date">Check-in — Check-out</label>
           </div>
           <form class="search">
+            <div class=" search__name">
             <input
               id="search__input-name"
               class="search__input-name"
               type="text"
               placeholder="New York"
             />
+            </div>
             <div class="search__date">
               <input
                 id="date"
                 class="search__input"
                 type="text"
-                placeholder="Tue 15 Sept"
+                placeholder="Tue 15 Sept — Sat 19 Sept"
               />
-              <input class="search__input-dash" placeholder="—" />
+              <input id="date-in"
+                     class="input-mobile-date"
+                     type="text"
+                     placeholder="Check-in date" />
+
               <input
                 id="date-out"
-                class="search__input"
+                class="input-mobile-date"
                 type="text"
-                placeholder="Sat 19 Sept"
+                placeholder="Check-out date "
               />
-            </div>
+              </div>
             <div class="search__person">
               <input
-                class="search__input person_input"
+                class="search__input"
                 type="text"
-                placeholder="2 Adults"
+                placeholder="2 Adults — 0 Children — 1 Room"
               />
-              <input class="search__input-dash" placeholder="—" />
               <input
-                class="search__input person_input"
-                type="text"
-                placeholder="0 Children"
+                      id="adults"
+                      class="input-mobile"
+                      type="text"
+                      placeholder="2"
               />
-              <input class="search__input-dash" placeholder="—" />
+<!--              <span class="input-mobile-span">|</span>-->
+              <label for="adults" class="page__label-mob label-adults">Adults</label>
               <input
-                class="search__input person_input"
+                id="children"
+                class="input-mobile"
                 type="text"
-                placeholder="1 Room"
+                placeholder="0"
               />
+<!--              <span class="input-mobile-span">|</span>-->
+              <label for="children" class="page__label-mob label-child">Children</label>
+              <input
+                id="room"
+                class="input-mobile"
+                type="text"
+                placeholder="1"
+              />
+              <label for="room" class="page__label-mob label-room">Room</label>
             </div>
             <button class="search__button">Search</button>
           </form>
@@ -168,6 +183,76 @@
         </div>
         <button class="homes__arrow"></button>
       </div>
+    </div>
+    <div class="destination">
+      <div class="destination__container">
+        <h2 class="destination__heading">The best destinations</h2>
+        <div class="destination__buttons">
+          <button>Regions</button>
+          <button>Cities</button>
+          <button class="destination__buttons-desk">Places of interest</button>
+          <button class="destination__buttons-mob">Places</button>
+        </div>
+        <div class="destination__regions">
+          <div class="destination__block-hover">
+            <button class="destination__button-hover">Book now</button>
+          <div class="destination__block">
+            <img
+              src="./images/maldives.png"
+              class="destination__img"
+              alt="Maldives"
+            />
+            <a href="">Maldives</a>
+          </div>
+          </div>
+          <div class="destination__block-hover">
+            <button class="destination__button-hover">Book now</button>
+          <div class="destination__block">
+            <img
+              src="./images/spain.png"
+              class="destination__img"
+              alt="Spain"
+            />
+            <a href="">Spain</a>
+          </div>
+          </div>
+            <div class="destination__block-hover block-mob">
+              <button class="destination__button-hover">Book now</button>
+          <div class="destination__block">
+            <img
+              src="./images/norway.png"
+              class="destination__img"
+              alt="Norway"
+            />
+            <a href="">Norway</a>
+          </div>
+            </div>
+              <div class="destination__block-hover block-mob">
+                <button class="destination__button-hover">Book now</button>
+          <div class="destination__block">
+            <img
+              src="./images/island.png"
+              class="destination__img"
+              alt="Island"
+            />
+            <a href="">Island</a>
+          </div>
+              </div>
+        </div>
+        <button class="destination__arrow"></button>
+      </div>
+    </div>
+    <div class="sign_up">
+      <div class="sign_up__container">
+      <div class="sign_up__avatar"></div>
+      <div class="sign_up__text">
+        <p>
+          Sign up and get 20% off your first booking
+        </p>
+        <button class="sign_up__button">Sign up</button>
+      </div>
+      <div class="sign_up__exit"></div>
+    </div>
     </div>
     <footer class="footer">
       <svg class="footer_title">
