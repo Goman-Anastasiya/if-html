@@ -22,8 +22,6 @@
             <div class="header__link-wrapper">
               <button class="header__button header__icon-night"></button>
               <button class="header__button header__icon-account"></button>
-            </div>
-            <div>
               <button class="header__button header__icon-menu"></button>
             </div>
           </div>
@@ -33,70 +31,70 @@
             Discover stays <br />
             to live, work or just relax
           </h1>
-          <div class="page__label">
-            <div class="glass"></div>
-            <label for="search__input-name">
-             Your destination or hotel name
-            </label>
-              <label for="date" class="page__label-date">Check-in — Check-out</label>
-          </div>
           <form class="search">
-            <div class=" search__name">
-            <input
-              id="search__input-name"
-              class="search__input-name"
-              type="text"
-              placeholder="New York"
-            />
+            <div class="search__name">
+              <div class="glass"></div>
+              <input
+                id="search__input-name"
+                class="search__input-name"
+                type="text"
+                placeholder="New York"
+              />
+              <label for="search__input-name">
+                Your destination or hotel name
+              </label>
             </div>
             <div class="search__date">
-              <input
-                id="date"
-                class="search__input"
-                type="text"
-                placeholder="Tue 15 Sept — Sat 19 Sept"
-              />
-              <input id="date-in"
-                     class="input-mobile-date"
-                     type="text"
-                     placeholder="Check-in date" />
-
-              <input
-                id="date-out"
-                class="input-mobile-date"
-                type="text"
-                placeholder="Check-out date "
-              />
+              <div class="search__date_desk">
+                <label for="date" class="page__label-date">
+                  Check-in — Check-out
+                </label>
+                <input
+                  id="date"
+                  class="search__input"
+                  type="text"
+                  placeholder="Tue 15 Sept — Sat 19 Sept"
+                />
               </div>
+            </div>
+            <div class="input-mobile-date">
+              <div class="input-mobile-date-in">
+                <label for="date-in">Check-in date</label>
+                <input id="date-in" type="text" placeholder="Tue 15 Sept 2020" />
+              </div>
+              <div class="input-mobile-date-out">
+                <label for="date-out">Check-out date</label>
+                <input id="date-out" type="text" placeholder="Sat 19 Sept 2020" />
+              </div>
+            </div>
             <div class="search__person">
               <input
                 class="search__input"
                 type="text"
                 placeholder="2 Adults — 0 Children — 1 Room"
               />
-              <input
-                      id="adults"
-                      class="input-mobile"
-                      type="text"
-                      placeholder="2"
-              />
-<!--              <span class="input-mobile-span">|</span>-->
-              <label for="adults" class="page__label-mob label-adults">Adults</label>
-              <input
-                id="children"
-                class="input-mobile"
-                type="text"
-                placeholder="0"
-              />
-<!--              <span class="input-mobile-span">|</span>-->
-              <label for="children" class="page__label-mob label-child">Children</label>
-              <input
-                id="room"
-                class="input-mobile"
-                type="text"
-                placeholder="1"
-              />
-              <label for="room" class="page__label-mob label-room">Room</label>
+            </div>
+            <div class="search__person-mob">
+              <div class="input-mobile">
+                <input id="adults" type="text" placeholder=" 2" />
+                <label for="adults" class="page__label-mob label-adults">
+                  Adults
+                </label>
+              </div>
+              <div class="input-mobile-span"></div>
+              <div class="input-mobile">
+                <input id="children" type="text" placeholder="0" />
+                <label for="children" class="page__label-mob label-child">
+                  Children
+                </label>
+              </div>
+              <div class="input-mobile-span"></div>
+              <div class="input-mobile">
+                <input id="room" type="text" placeholder="1" />
+                <label for="room" class="page__label-mob label-room">
+                  Room
+                </label>
+              </div>
             </div>
             <button class="search__button">Search</button>
           </form>
@@ -111,80 +109,84 @@
         </div>
       </div>
     </div>
-    <div class="advantages">
-      <div class="heading-container">
-        <h2 class="advantages__heading">What do we offer</h2>
+    <div class="container">
+      <div class="advantages">
+        <div class="heading-container">
+          <h2 class="advantages__heading">What do we offer</h2>
+        </div>
+        <div class="advantages__container">
+          <div class="advantages__content col-lg-3 col-md-6 col-sm-6">
+            <svg class="advantages__content--svg">
+              <use href="../images/sprite.svg/#support" />
+            </svg>
+            <p>Support 24/7</p>
+          </div>
+          <div class="advantages__content col-lg-3 col-md-6 col-sm-6">
+            <svg class="advantages__content--svg">
+              <use href="../images/sprite.svg/#communication" />
+            </svg>
+            <p>Communicate directly</p>
+          </div>
+          <div class="advantages__content col-lg-3 col-md-6 col-sm-6">
+            <svg class="advantages__content--svg">
+              <use href="../images/sprite.svg/#booking" />
+            </svg>
+            <p>Book online</p>
+          </div>
+          <div class="advantages__content col-lg-3 col-md-6 col-sm-6">
+            <svg class="advantages__content--svg">
+              <use href="../images/sprite.svg/#reviews" />
+            </svg>
+            <p>Real guest reviews</p>
+          </div>
+        </div>
       </div>
-      <div class="advantages__container">
-        <div class="advantages__content col-lg-3 col-md-6 col-sm-6">
-          <svg class="advantages__content--svg">
-            <use href="../images/sprite.svg/#support" />
-          </svg>
-          <p>Support 24/7</p>
-        </div>
-        <div class="advantages__content col-lg-3 col-md-6 col-sm-6">
-          <svg class="advantages__content--svg">
-            <use href="../images/sprite.svg/#communication" />
-          </svg>
-          <p>Communicate directly</p>
-        </div>
-        <div class="advantages__content col-lg-3 col-md-6 col-sm-6">
-          <svg class="advantages__content--svg">
-            <use href="../images/sprite.svg/#booking" />
-          </svg>
-          <p>Book online</p>
-        </div>
-        <div class="advantages__content col-lg-3 col-md-6 col-sm-6">
-          <svg class="advantages__content--svg">
-            <use href="../images/sprite.svg/#reviews" />
-          </svg>
-          <p>Real guest reviews</p>
+    </div>
+    <div class="container">
+      <div class="homes">
+        <h2 class="homes__heading">Homes guests loves</h2>
+        <div class="homes__container">
+          <div class="homes__hotel">
+            <img
+              src="./images/hotel-leopold.png"
+              class="homes__img"
+              alt="Hotel Leopold"
+            />
+            <a href="">Hotel Leopold</a>
+            <p>Saint Petersburg, Russia</p>
+          </div>
+          <div class="homes__hotel">
+            <img
+              src="./images/apartment-sunshine.png"
+              class="homes__img"
+              alt="Apartment Sunshine"
+            />
+            <a href="">Apartment Sunshine</a>
+            <p>Santa Cruz de Tenerife, Spain</p>
+          </div>
+          <div class="homes__hotel homes__mob">
+            <img
+              src="./images/villa-kunerad.png"
+              class="homes__img"
+              alt="Villa Kunerad"
+            />
+            <a href="">Villa Kunerad</a>
+            <p>Vysokie Tatry, Slowakia</p>
+          </div>
+          <div class="homes__hotel homes__mob homes__tab">
+            <img
+              src="./images/hostel-friendship.png"
+              class="homes__img"
+              alt="Hostel Friendship"
+            />
+            <a href="">Hostel Friendship</a>
+            <p>Berlin, Germany</p>
+          </div>
+          <button class="homes__arrow"></button>
         </div>
       </div>
     </div>
-    <div class="homes">
-      <h2 class="homes__heading">Homes guests loves</h2>
-      <div class="homes_container">
-        <div class="homes__hotel">
-          <img
-            src="./images/hotel-leopold.png"
-            class="homes_img"
-            alt="Hotel Leopold"
-          />
-          <a href="">Hotel Leopold</a>
-          <p>Saint Petersburg, Russia</p>
-        </div>
-        <div class="homes__hotel">
-          <img
-            src="./images/apartment-sunshine.png"
-            class="homes_img"
-            alt="Apartment Sunshine"
-          />
-          <a href="">Apartment Sunshine</a>
-          <p>Santa Cruz de Tenerife, Spain</p>
-        </div>
-        <div class="homes__hotel homes__mob">
-          <img
-            src="./images/villa-kunerad.png"
-            class="homes_img"
-            alt="Villa Kunerad"
-          />
-          <a href="">Villa Kunerad</a>
-          <p>Vysokie Tatry, Slowakia</p>
-        </div>
-        <div class="homes__hotel homes__mob">
-          <img
-            src="./images/hostel-friendship.png"
-            class="homes_img"
-            alt="Hostel Friendship"
-          />
-          <a href="">Hostel Friendship</a>
-          <p>Berlin, Germany</p>
-        </div>
-        <button class="homes__arrow"></button>
-      </div>
-    </div>
-    <div class="destination">
+    <div class="destination container">
       <div class="destination__container">
         <h2 class="destination__heading">The best destinations</h2>
         <div class="destination__buttons">
@@ -196,130 +198,137 @@
         <div class="destination__regions">
           <div class="destination__block-hover">
             <button class="destination__button-hover">Book now</button>
-          <div class="destination__block">
-            <img
-              src="./images/maldives.png"
-              class="destination__img"
-              alt="Maldives"
-            />
-            <a href="">Maldives</a>
-          </div>
+            <div class="destination__block">
+              <div>
+                <img
+                  src="./images/maldives.png"
+                  class="destination__img"
+                  alt="Maldives"
+                />
+              </div>
+              <a href="">Maldives</a>
+            </div>
           </div>
           <div class="destination__block-hover">
             <button class="destination__button-hover">Book now</button>
-          <div class="destination__block">
-            <img
-              src="./images/spain.png"
-              class="destination__img"
-              alt="Spain"
-            />
-            <a href="">Spain</a>
-          </div>
-          </div>
-            <div class="destination__block-hover block-mob">
-              <button class="destination__button-hover">Book now</button>
-          <div class="destination__block">
-            <img
-              src="./images/norway.png"
-              class="destination__img"
-              alt="Norway"
-            />
-            <a href="">Norway</a>
-          </div>
+            <div class="destination__block">
+              <img
+                src="./images/spain.png"
+                class="destination__img"
+                alt="Spain"
+              />
+              <a href="">Spain</a>
             </div>
-              <div class="destination__block-hover block-mob">
-                <button class="destination__button-hover">Book now</button>
-          <div class="destination__block">
-            <img
-              src="./images/island.png"
-              class="destination__img"
-              alt="Island"
-            />
-            <a href="">Island</a>
           </div>
-              </div>
+          <div class="destination__block-hover block-mob">
+            <button class="destination__button-hover">Book now</button>
+            <div class="destination__block">
+              <img
+                src="./images/norway.png"
+                class="destination__img"
+                alt="Norway"
+              />
+              <a href="">Norway</a>
+            </div>
+          </div>
+          <div class="destination__block-hover block-mob block-tab">
+            <button class="destination__button-hover">Book now</button>
+            <div class="destination__block">
+              <img
+                src="./images/island.png"
+                class="destination__img"
+                alt="Island"
+              />
+              <a href="">Island</a>
+            </div>
+          </div>
+          <button class="destination__arrow"></button>
         </div>
-        <button class="destination__arrow"></button>
       </div>
     </div>
-    <div class="sign_up">
-      <div class="sign_up__container">
-      <div class="sign_up__avatar"></div>
-      <div class="sign_up__text">
-        <p>
-          Sign up and get 20% off your first booking
-        </p>
-        <button class="sign_up__button">Sign up</button>
+    <div class="container">
+      <div class="sign_up">
+        <div class="sign_up__container">
+          <div class="sign_up__avatar"></div>
+          <div class="sign_up__text">
+            <p>Sign up and get 20% off your first booking</p>
+            <button class="sign_up__button">Sign up</button>
+          </div>
+        </div>
+        <div class="sign_up__exit"></div>
+        <div class="sing_up__container-tab">
+          <div class="sing_up__logo"></div>
+          <p>Sign up in the app and get 20% off your first booking</p>
+          <a href="">Install</a>
+        </div>
       </div>
-      <div class="sign_up__exit"></div>
     </div>
+    <div class="container footer">
+      <footer class="footer">
+        <svg class="footer_title">
+          <use href="../images/sprite.svg/#logo-vector" />
+        </svg>
+        <div class="footer__container-cont">
+          <div class="footer__container">
+            <ul class="footer__content">
+              <li class="list__title">
+                <a href="" class="list__title">About</a>
+              </li>
+              <li class="list__content">
+                <a href="" class="list__content-link">How Triphouse works</a>
+              </li>
+              <li class="list__content">
+                <a href="" class="list__content-link">Careers</a>
+              </li>
+              <li class="list__content">
+                <a href="" class="list__content-link">Privacy</a>
+              </li>
+              <li class="list__content">
+                <a href="" class="list__content-link">Terms</a>
+              </li>
+            </ul>
+            <ul class="footer__content">
+              <li class="list__title">
+                <a href="" class="list__title">Property types</a>
+              </li>
+              <li class="list__content">
+                <a href="" class="list__content-link">Guest houses</a>
+              </li>
+              <li class="list__content">
+                <a href="" class="list__content-link">Hotels</a>
+              </li>
+              <li class="list__content">
+                <a href="" class="list__content-link">Apartments</a>
+              </li>
+              <li class="list__content">
+                <a href="" class="list__content-link">Villas</a>
+              </li>
+              <li class="list__content">
+                <a href="" class="list__content-link">Holiday homes</a>
+              </li>
+              <li class="list__content">
+                <a href="" class="list__content-link">Hostels</a>
+              </li>
+            </ul>
+            <ul class="footer__content">
+              <li class="list__title">
+                <a href="" class="list__title">Support</a>
+              </li>
+              <li class="list__content">
+                <a href="" class="list__content-link"
+                  >Contact Customer Service</a
+                >
+              </li>
+              <li class="list__content">
+                <a href="" class="list__content-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p><sup>&copy;</sup>2022Triphouse, Inc. All rights reserved</p>
+          </div>
+        </div>
+      </footer>
     </div>
-    <footer class="footer">
-      <svg class="footer_title">
-        <use href="../images/sprite.svg/#logo-vector" />
-      </svg>
-      <div class="footer__container">
-        <div class="footer__content">
-          <ul>
-            <li class="list__title">
-              <a href="" class="list__title">About</a>
-            </li>
-            <li class="list__content">
-              <a href="" class="list__content-link">How Triphouse works</a>
-            </li>
-            <li class="list__content">
-              <a href="" class="list__content-link">Careers</a>
-            </li>
-            <li class="list__content">
-              <a href="" class="list__content-link">Privacy</a>
-            </li>
-            <li class="list__content">
-              <a href="" class="list__content-link">Terms</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__content">
-          <ul>
-            <li class="list__title">
-              <a href="" class="list__title">Property types</a>
-            </li>
-            <li class="list__content">
-              <a href="" class="list__content-link">Guest houses</a>
-            </li>
-            <li class="list__content">
-              <a href="" class="list__content-link">Hotels</a>
-            </li>
-            <li class="list__content">
-              <a href="" class="list__content-link">Apartments</a>
-            </li>
-            <li class="list__content">
-              <a href="" class="list__content-link">Villas</a>
-            </li>
-            <li class="list__content">
-              <a href="" class="list__content-link">Holiday homes</a>
-            </li>
-            <li class="list__content">
-              <a href="" class="list__content-link">Hostels</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__content">
-          <ul>
-            <li class="list__title">
-              <a href="" class="list__title">Support</a>
-            </li>
-            <li class="list__content">
-              <a href="" class="list__content-link">Contact Customer Service</a>
-            </li>
-            <li class="list__content">
-              <a href="" class="list__content-link">FAQ</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__content copyright">
-        <p><sup>&copy;</sup>2022Triphouse, Inc. All rights reserved</p>
-      </div>
-    </footer>
   </body>
 </html>
